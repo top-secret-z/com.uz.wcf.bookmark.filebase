@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/templateListener.xsd">
+	<import>
+		<templatelistener name="bookmarkFilebase">
+			<environment>user</environment>
+			<templatename>file</templatename>
+			<eventname>contentHeaderNavigation</eventname>
+			<templatecode><![CDATA[{include file='__bookmarkFilebase' application='filebase'}]]></templatecode>
+		</templatelistener>
+		
+		<templatelistener name="userProfileBookmarkFilebase">
+			<environment>user</environment>
+			<templatename>userProfileBookmark</templatename>
+			<eventname>dropDownType</eventname>
+			<templatecode><![CDATA[{include file='__userProfileBookmarkFilebase' application='filebase'}]]></templatecode>
+		</templatelistener>
+	</import>
+</data>
